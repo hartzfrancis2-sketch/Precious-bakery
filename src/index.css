@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-display: "Poppins", "Inter", sans-serif;
+
+  /* Brand Colors */
+  --color-primary: #fff8f0;
+  --color-warmpink: #e88b9b;
+  --color-primary-dark: #c75a6f;
+
+  --color-secondary: #6b4f3a;
+  --color-secondary-light: #5eead4;
+  --color-secondary-dark: #047857;
+
+  /* Neutral Colors */
+  --color-bg: #ffffff;
+  --color-bg-dark: #111827;
+  --color-text: #212529;
+  --color-text-dark: #f3f4f6;
+  --color-muted: #6c757d;
+  --color-muted-dark: #9ca3af;
+  --color-surface: #ecedf2;
+  --color-surface-dark: #1f2937;
+
+  /* Footer background */
+  --color-footer-bg: #ecedf2;
+  --color-footer-bg-dark: #111827;
+
+  /* Border radius + spacing scales (optional) */
+  --radius-base: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* Shadows */
+  --shadow-soft: 0px 0px 7px 3px #dce1e5;
+}
+
+button {
+  cursor: pointer;
+}
