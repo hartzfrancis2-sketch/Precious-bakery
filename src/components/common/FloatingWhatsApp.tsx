@@ -12,8 +12,7 @@ const FloatingWhatsApp = ({
   message,
   position = "bottom-right",
 }: FloatingWhatsAppProps): JSX.Element => {
-  const whatsappLink = `http://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message ?? "")}`;
   const positionClass =
     position === "bottom-left" ? "bottom-6 left-6" : "bottom-6 right-6";
   return (
