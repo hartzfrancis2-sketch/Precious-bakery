@@ -99,10 +99,10 @@ const Home = (): JSX.Element => {
             <div className="absolute bottom-0 right-0 w-lg h-128 bg-primary/20 blur-3xl rounded-full" />
 
             {/* Container */}
-            <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-24">
+            <div className="relative max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-24">
               {/* IMAGE SECTION */}
               <ScrollAnimation x={-80} duration={0.8}>
-              <div className="relative w-full flex justify-center lg:justify-end order-2 lg:order-1">
+              <div className="relative w-full flex justify-center lg:justify-end ">
                 <div className="relative group">
                   <img
                     src="/images/presh.jpeg"
@@ -134,7 +134,7 @@ const Home = (): JSX.Element => {
 
               {/* TEXT SECTION */}
               <ScrollAnimation x={80} duration={0.8}>
-              <div className="w-full max-w-2xl mx-auto lg:mx-0 text-center lg:text-left text-white space-y-8 lg:pl-10 order-1 lg:order-2">
+              <div className="w-full max-w-2xl mx-auto lg:mx-0 text-center lg:text-left text-white space-y-8 lg:pl-10 ">
                 {/* Label */}
                 <p className="uppercase tracking-[0.35em] text-warmpink font-semibold">
                   About Us

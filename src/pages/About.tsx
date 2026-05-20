@@ -48,10 +48,10 @@ const About = (): JSX.Element => {
 
       {/* MAIN SECTION */}
       <section className="relative max-w-6xl mx-auto px-6 lg:px-10 py-20">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* IMAGE */}
           <ScrollAnimation x={-80} duration={0.8} y={60}>
-          <div className="relative group order-2 md:order-1">
+          <div className="relative group order-1 md:order-2">
             <img
               src="/testimonia/about1.jpeg"
               alt="Bakery About"
@@ -73,7 +73,7 @@ const About = (): JSX.Element => {
 
           {/* TEXT */}
           <ScrollAnimation x={80} duration={0.8} y={60}>
-          <div className="space-y-6 order-1 md:order-2">
+          <div className="space-y-6 order-2 md:order-1">
             <p className="uppercase tracking-[0.35em] text-warmpink font-semibold">
               About Us
             </p>
