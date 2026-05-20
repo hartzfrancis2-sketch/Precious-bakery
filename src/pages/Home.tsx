@@ -353,7 +353,7 @@ const Home = (): JSX.Element => {
                 delay={index * 0.1}
                 duration={0.8}
               >
-                <a  href="#" className="group relative">
+                <div className="group relative">
                   {/* Glow ring */}
                   <div className="absolute inset-0 rounded-2xl bg-warmpink/20 blur-md opacity-0 group-hover:opacity-100 transition duration-300" />
 
@@ -363,7 +363,7 @@ const Home = (): JSX.Element => {
                   >
                     {item.icon}
                   </div>
-                </a>
+                </div>
               </ScrollAnimation>
             ))}
           </div>
