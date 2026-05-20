@@ -39,7 +39,7 @@ const items: MenuItem[] = [
     name: "Strawberry Cake",
     price: "GH₵ 250",
     category: "Cakes",
-    image: "menu/strawberrycake.jpeg",
+    image: "/menu/strawberrycake.jpeg",
     quantity:"1",
   },
   {
@@ -61,7 +61,7 @@ const items: MenuItem[] = [
     name: "Fruit Cake",
     price: "GH₵ 300",
     category: "Cakes",
-    image: "menu/mixedmablecake.jpeg",
+    image: "menu/fruitcake.jpeg",
     quantity:"1",
   },
   {
