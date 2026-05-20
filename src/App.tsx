@@ -5,23 +5,20 @@ import { ROUTES } from "./routes/paths";
 import { useScrollToTop } from "./hooks/useScrollToTop";
 import { SEO } from "./components/common";
 
-/* ================================
-   LAZY LOADED PAGES
-================================ */
+/* NORMAL IMPORTS FOR SERVICES */
+import CakeService from "./services/CakeService";
+import DessertService from "./services/DessertService";
+import BreadService from "./services/BreadService";
+import BirthService from "./services/BirthService";
+import DesignService from "./services/DesignService";
+import WeddingService from "./services/WeddingService";
 
+/* LAZY LOAD ONLY PAGES */
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const Contact = lazy(() => import("./pages/Contact"));
-
-const CakeService = lazy(() => import("./services/CakeService"));
-const DessertService = lazy(() => import("./services/DessertService"));
-const BreadService = lazy(() => import("./services/BreadService"));
-const BirthService = lazy(() => import("./services/BirthService"));
-const DesignService = lazy(() => import("./services/DesignService"));
-const WeddingService = lazy(() => import("./services/WeddingService"));
-
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
