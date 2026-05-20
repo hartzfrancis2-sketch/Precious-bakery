@@ -13,7 +13,7 @@ const SEO = ({
   description,
   keywords,
   image = "/logo/logo1.jpeg",
-  url = "https://yourwebsite.com",
+  url = "https://depreciousbakery.vercel.app/",
 }: SEOProps) => {
   return (
     <Helmet>
