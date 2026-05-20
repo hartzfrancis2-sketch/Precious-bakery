@@ -7,10 +7,10 @@ interface BakeryLoaderProps {
   size?: "small" | "medium" | "large";
 }
 
-export default function BakeryLoader({
+const BakeryLoader = ({
   fullScreen = true,
   size = "medium",
-}: BakeryLoaderProps): JSX.Element {
+}: BakeryLoaderProps): JSX.Element => {
   const sizes = {
     small: {
       container: "w-10 h-10",
@@ -105,3 +105,5 @@ export default function BakeryLoader({
     </div>
   );
 }
+
+export default BakeryLoader;

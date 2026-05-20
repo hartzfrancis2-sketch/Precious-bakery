@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { SectionHeader, BakeryLoader, SEO, ScrollAnimation } from "../components/common";
 
+
 interface Service {
   id: number;
   title: string;
@@ -12,7 +13,7 @@ interface Service {
   link: string;
 }
 
-export default function LuxuryBakeryMasonry(): JSX.Element {
+const Services = (): JSX.Element =>{
   const navigate = useNavigate();
 
   const [loadingLink, setLoadingLink] = useState<number | null>(null);
@@ -173,3 +174,5 @@ export default function LuxuryBakeryMasonry(): JSX.Element {
     </section>
   );
 }
+
+export default Services;

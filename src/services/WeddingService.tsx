@@ -1,10 +1,11 @@
+
 import { FaCheckCircle } from "react-icons/fa";
 import { SectionHeader, BakeryLoader, ScrollAnimation } from "../components/common";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, type JSX } from "react";
 import { Breadcrumb } from "../components/common";
 
-export default function WeddingService() {
+const WeddingService = (): JSX.Element => {
   const [ContactLoading, SetContactLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -145,3 +146,5 @@ export default function WeddingService() {
     </div>
   );
 }
+
+export default WeddingService;

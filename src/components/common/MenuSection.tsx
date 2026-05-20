@@ -303,7 +303,7 @@ const items: MenuItem[] = [
   },
 ];
 
-export default function BakeryMenuPage(): JSX.Element {
+const MenuSection = (): JSX.Element => {
   const [page, setPage] = useState(1);
   const [loadingItem, setLoadingItem] = useState<string | null>(null);
   const [loadingPage, setLoadingPage] = useState<number | null>(null);
@@ -435,3 +435,5 @@ export default function BakeryMenuPage(): JSX.Element {
     </div>
   );
 }
+
+export default MenuSection;

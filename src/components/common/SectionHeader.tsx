@@ -11,7 +11,7 @@ interface SectionHeaderProps {
   className?: string;
 }
 
-export default function SectionHeader({
+const SectionHeader = ({
   subtitle,
   title,
   highlight,
@@ -19,7 +19,7 @@ export default function SectionHeader({
   center = true,
   light = false,
   className = "",
-}: SectionHeaderProps): JSX.Element {
+}: SectionHeaderProps): JSX.Element => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -85,3 +85,5 @@ export default function SectionHeader({
     </motion.div>
   );
 }
+
+export default SectionHeader;

@@ -6,10 +6,10 @@ interface Props {
   delay?: number;
 }
 
-export default function ScrollReveal({
+const ScrollReveal = ({
   children,
   delay = 0,
-}: Props): JSX.Element {
+}: Props): JSX.Element => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -25,3 +25,5 @@ export default function ScrollReveal({
     </motion.div>
   );
 }
+
+export default ScrollReveal;

@@ -1,10 +1,11 @@
+import type { JSX } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { SectionHeader, BakeryLoader, ScrollAnimation } from "../components/common";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Breadcrumb } from "../components/common";
 
-export default function DesignService() {
+const DesignService = (): JSX.Element => {
   const [ContactLoading, SetContactLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -146,3 +147,5 @@ export default function DesignService() {
     </div>
   );
 }
+
+export default DesignService;
