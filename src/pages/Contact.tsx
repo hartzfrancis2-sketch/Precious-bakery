@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-import { ScrollAnimation } from "../components/common";
+import { ScrollAnimation, SectionHeader } from "../components/common";
 
 /* ================================
    ZOD VALIDATION
@@ -83,11 +83,17 @@ const Contact = (): JSX.Element => {
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/20 blur-3xl rounded-full" />
 
       {/* CONTENT */}
+      <SectionHeader 
+      subtitle="Contact Us"
+      title="Send Us Sweet"
+      highlight="Messages And Your Treat"
+      description="We did Love To Receive Your Sweet Messages With Love And Tender Care,Contact Us Here Or on Our Media Handle "
+      light/>
       
       <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-16 grid lg:grid-cols-2 gap-12">
         {/* CONTACT FORM */}
         <ScrollAnimation x={-80} y={60} duration={0.8}>
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div className="absolute inset-0 bg-warmpink/10 blur-3xl rounded-3xl" />
 
           <form
@@ -170,7 +176,7 @@ const Contact = (): JSX.Element => {
 
         {/* CONTACT INFO */}
         <ScrollAnimation x={80} y={60} duration={0.8}>
-        <div className="space-y-8">
+        <div className="space-y-8 order-1 lg:order-2">
           <div className="grid gap-5">
             {/* LOCATION */}
             <div className="flex items-center gap-4 bg-white/5 border border-white/10 p-5 rounded-2xl backdrop-blur-xl">

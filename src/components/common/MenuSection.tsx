@@ -7,6 +7,8 @@ interface MenuItem {
   price: string;
   image: string;
   category: string;
+  quantity: string;
+  
 }
 
 const WHATSAPP_NUMBER = "233531830827";
@@ -14,248 +16,290 @@ const WHATSAPP_NUMBER = "233531830827";
 const items: MenuItem[] = [
   {
     name: "Chocolate Cake",
-    price: "GH₵ 120",
+    price: "GH₵ 180",
     category: "Cakes",
     image: "/menu/chocolatecake.jpeg",
+    quantity:"1 ",
   },
   {
     name: "Vanilla Cake",
-    price: "GH₵ 110",
+    price: "GH₵ 150",
     category: "Cakes",
     image: "/menu/Vanillacake.jpeg",
+    quantity:"1",
   },
   {
     name: "Red Velvet Cake",
-    price: "GH₵ 140",
+    price: "GH₵ 180",
     category: "Cakes",
     image: "/menu/redvelvetcake.jpeg",
+    quantity:"1",
   },
   {
     name: "Strawberry Cake",
-    price: "GH₵ 130",
+    price: "GH₵ 250",
     category: "Cakes",
     image: "menu/strawberrycake.jpeg",
+    quantity:"1",
   },
   {
     name: "All Wedding Cake",
     price: "GH₵ 500+",
     category: "Cakes",
     image: "menu/weddingcake.jpeg",
+    quantity:"Base On Size",
   },
   {
     name: "Mixed Marble Cake",
-    price: "GH₵ 125",
+    price: "GH₵ 300",
     category: "Cakes",
     image: "menu/mixedmablecake.jpeg",
+    quantity:"1",
+  },
+
+  {
+    name: "Fruit Cake",
+    price: "GH₵ 300",
+    category: "Cakes",
+    image: "menu/mixedmablecake.jpeg",
+    quantity:"1",
   },
   {
     name: "Coconut Cake",
-    price: "GH₵ 115",
+    price: "GH₵ 200",
     category: "Cakes",
     image: "menu/coconutcake.jpeg",
+    quantity:"1",
   },
   {
     name: "Carrot Cake",
-    price: "GH₵ 135",
+    price: "GH₵ 180",
     category: "Cakes",
     image: "menu/carrotcake.jpeg",
+    quantity:"1",
   },
 
   {
     name: "Vanilla Cupcakes",
-    price: "GH₵ 40",
+    price: "GH₵ 180",
     category: "Cupcakes",
     image: "menu/vanillacupcake.jpeg",
+    quantity:"6 Pieces",
   },
   {
     name: "Chocolate Cupcakes",
-    price: "GH₵ 45",
+    price: "GH₵ 220",
     category: "Cupcakes",
     image: "menu/chocolatecupcake.jpeg",
+    quantity:"6 Pieces",
   },
   {
     name: "Cupcake",
-    price: "GH₵ 50",
+    price: "GH₵ 180",
     category: "Cupcakes",
     image: "menu/cupcake.jpeg",
+    quantity:"6 Pieces",
   },
   {
     name: "Mini Birthday Cakes",
-    price: "GH₵ 60",
+    price: "GH₵ 200",
     category: "Cupcakes",
     image: "menu/minibirthdaycake.jpeg",
+    quantity:"1",
   },
 
   {
     name: "Meat Pie",
-    price: "GH₵ 12",
+    price: "GH₵ 25",
     category: "Pastries",
     image: "menu/meatpie.jpeg",
+    quantity:"1",
   },
   {
     name: "Chicken Pie",
-    price: "GH₵ 14",
+    price: "GH₵ 35",
     category: "Pastries",
     image: "menu/chickenpie.jpeg",
+    quantity:"1",
   },
   {
     name: "Golden EggRolls",
     price: "GH₵ 10",
     category: "Rolls",
     image: "menu/goldeneggrolls.jpeg",
+    quantity:"1",
   },
   {
     name: "Chin Chin",
-    price: "GH₵ 15",
+    price: "GH₵ 80+",
     category: "Pastries",
     image: "menu/chinchin.jpeg",
+    quantity:"Depends on Quantity"
   },
   {
-    name: "Cheese Puff",
-    price: "GH₵ 8",
+    name: "Cheese Cake",
+    price: "GH₵ 350",
     category: "Pastries",
     image: "menu/cheesecake.jpeg",
+    quantity:"1",
   },
   {
     name: "Milky Doughnuts",
-    price: "GH₵ 20",
+    price: "GH₵ 200",
     category: "Pastries",
     image: "menu/milkydoughnut.jpeg",
+    quantity:"Box Of Six",
   },
 
   {
-    name: "Chocolate Doughnut",
-    price: "GH₵ 20",
+    name: "Mini Chocolate Doughnut",
+    price: "GH₵ 200",
     category: "Pastries",
     image: "menu/chocolatedoughnut.jpeg",
+    quantity:"40 pieces",
+  },
+
+  {
+    name: "Large Chocolate Doughnut",
+    price: "GH₵ 250",
+    category: "Pastries",
+    image: "menu/chocolatedoughnut.jpeg",
+    quantity:"40 pieces",
   },
   {
     name: "Egg Buns",
-    price: "GH₵ 16",
+    price: "GH₵ 10",
     category: "Pastries",
     image: "menu/eggbuns.jpeg",
+    quantity:"1",
   },
   {
     name: "Shawarma",
-    price: "GH₵ 18",
+    price: "GH₵ 80",
     category: "Pastries",
     image: "menu/shawama.jpeg",
+    quantity:"1",
   },
   {
-    name: "Pizza",
-    price: "GH₵ 17",
+    name: "Mini Pizza",
+    price: "GH₵ 200",
     category: "Pastries",
     image: "menu/pizza.jpeg",
+    quantity:"12 pieces",
   },
   {
     name: "Samosa",
-    price: "GH₵ 20",
+    price: "GH₵ 50",
     category: "Pastries",
     image: "menu/samosa.jpeg",
+    quantity:"6 pieces",
   },
   {
     name: "RockBuns",
-    price: "GH₵ 15",
+    price: "GH₵ 40",
     category: "Rokies",
     image: "menu/rockbuns.jpeg",
+    quantity:"5 pieces",
   },
 
   {
     name: "Burger",
-    price: "GH₵ 10",
+    price: "GH₵ 55",
     category: "Pastries",
     image: "menu/burger.jpeg",
+    quantity:"2 pieces",
   },
   {
     name: "Sausage Roll",
-    price: "GH₵ 12",
+    price: "GH₵ 25",
     category: "Rolls",
     image: "menu/sausageroll.jpeg",
+    quantity:"1"
   },
   {
     name: "Spring Roll",
-    price: "GH₵ 12",
+    price: "GH₵ 50",
     category: "Rolls",
     image: "menu/springroll.jpeg",
+    quantity:"7 pieces",
   },
-  {
-    name: "FruitChips",
-    price: "GH₵ 18",
-    category: "Chips",
-    image: "menu/fruitchips.jpeg",
-  },
-
   {
     name: "Plantain Chips",
-    price: "GH₵ 60",
+    price: "GH₵ 30",
     category: "Chips",
     image: "menu/plantainchips.jpeg",
+    quantity:"1",
   },
   {
     name: "Potatoes Chips",
-    price: "GH₵ 25",
+    price: "GH₵ 30",
     category: "Chips",
     image: "menu/potatochips.jpeg",
+    quantity:"1",
   },
-  {
-    name: "Corn Chips",
-    price: "GH₵ 45",
-    category: "Chips",
-    image: "menu/cornchips.jpeg",
-  },
+  
   {
     name: "Assorted Food Services",
-    price: "GH₵ 50+",
+    price: "GH₵ 80",
     category: "Food",
     image: "menu/foods.jpeg",
+    quantity:"Per Plate",
   },
   {
     name: "Multy Fruit Drinks",
-    price: "GH₵ 35",
+    price: "GH₵ 60",
     category: "Desserts",
     image: "menu/multifruitdrink.jpeg",
+    quantity:"1 each",
   },
   {
     name: "Banana Bread",
-    price: "GH₵ 35",
+    price: "GH₵ 60",
     category: "Breads",
     image: "menu/bananabread.jpeg",
+    quantity:"1",
   },
   {
     name: "Milk Bread",
-    price: "GH₵ 35",
+    price: "GH₵ 55",
     category: "Bread",
     image: "menu/milkbread.jpeg",
+    quantity:"1",
   },
   {
     name: "Wheat Bread",
-    price: "GH₵ 35",
+    price: "GH₵ 60",
     category: "Bread",
     image: "menu/wheatbread.jpeg",
+    quantity:"1",
   },
   {
     name: "Butter Bread",
-    price: "GH₵ 35",
+    price: "GH₵ 40",
     category: "Bread",
     image: "menu/butterbread.jpeg",
+    quantity:"1",
   },
   {
     name: "Bread Sandwich",
-    price: "GH₵ 35",
+    price: "GH₵ 40",
     category: "Bread",
     image: "menu/breadsandwhish.jpeg",
+    quantity:"1",
   },
   {
-    name: "Burgette",
+    name: "ButterBread with ChocolateToppings",
     price: "GH₵ 35",
     category: "Bread",
     image: "menu/z2.jpeg",
+    quantity:"1",
   },
   {
-    name: "Round Rolls",
+    name: "Cinnamon Rolls",
     price: "GH₵ 35",
     category: "Rolls",
     image: "menu/z1.jpeg",
+    quantity:"1",
   },
 ];
 
@@ -339,9 +383,11 @@ export default function BakeryMenuPage(): JSX.Element {
               <div className="p-4">
                 <h3 className="font-bold text-sm">{item.name}</h3>
                 <p className="text-xs text-gray-400">{item.category}</p>
+                <p className="text-bold text-warmpink">{item.quantity}</p>
 
                 <div className="flex justify-between items-center mt-3">
                   <span className="text-pink-400 font-bold text-sm">
+
                     {item.price}
                   </span>
 
