@@ -73,7 +73,7 @@ const Footer = (): JSX.Element => {
               Follow Us
             </h2>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 ">
               {[
                 { icon: <FaFacebook />, color: "bg-blue-500" },
                 { icon: <FaTwitter />, color: "bg-sky-500" },
@@ -82,7 +82,7 @@ const Footer = (): JSX.Element => {
                 { icon: <FaWhatsapp />, color: "bg-green-500" },
                 { icon: <FaDiscord />, color: "bg-indigo-500" },
               ].map((item, i) => (
-                <a key={i} href="#" className="group relative">
+                <div key={i} className="group relative">
                   {/* Glow ring */}
                   <div className="absolute inset-0 rounded-xl bg-warmpink/20 blur-md opacity-0 group-hover:opacity-100 transition duration-300" />
 
@@ -92,7 +92,7 @@ const Footer = (): JSX.Element => {
                   >
                     {item.icon}
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>
